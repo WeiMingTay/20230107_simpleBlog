@@ -1,0 +1,43 @@
+.blogDetail {
+  padding-top: 2rem;
+}
+.blogDetail > div {
+  margin-left: 10rem;
+}
+.blogDetail > div:first-of-type {
+  height: 60vh;
+}
+.blogDetail > div:first-of-type img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogDetail > div:first-of-type a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.15);
+  font-size: 0.8rem;
+}
+.blogDetail > div:first-of-type a:hover {
+  visibility: visible;
+}
+.blogDetail > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10rem 0 20rem;
+  padding: 3rem 0;
+}
+.blogDetail > div:last-of-type div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blogDetail > div:last-of-type div h4 {
+  font-size: 2rem;
+}
+.blogDetail > div:last-of-type div p:last-of-type {
+  font-weight: 700;
+}
+.blogDetail > div:last-of-type > p {
+  font-weight: 600;
+}/*# sourceMappingURL=BlogDetail.css.map */
