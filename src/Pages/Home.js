@@ -10,7 +10,7 @@ const Home = () => {
 			<div>
 				<h2>Willkommen zu meinem Blog</h2>
 				{/* <Button /> */}
-                <Link to="/BlogOverview"><Button /></Link>
+                <Link to="/BlogOverview"><Button klick="Go to articles" /></Link>
 				{/* <Button onCLick={<Link to="/BlogOverview"></Link>}/> */}
 			</div>
 		</section>

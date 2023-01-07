@@ -1,9 +1,11 @@
-import "./Button.css"
+import "./Button.css";
 
-const Button = () => {
+const Button = (props) => {
+	// one button to rule them all
+	let klick = props.klick;
 	return (
 		<section>
-			<button>Read More</button>
+			<button>{klick}</button>
 		</section>
 	);
 };

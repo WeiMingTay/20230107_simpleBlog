@@ -12,7 +12,7 @@ const BlogOverview = () => {
 						<img src={blog.img_url} alt={blog.title} />
 					</div>
 					<h3>{blog.title}</h3>
-                    <Link to={`/BlogOverview/${blog.id}`}><Button /></Link>
+                    <Link to={`/BlogOverview/${blog.id}`}><Button klick="Read more"/></Link>
 					
 				</article>
 			))}
