@@ -10,12 +10,24 @@ const BlogDetail = () => {
 		month: "long",
 		day: "numeric",
 	};
-	let date0 = blogData[params.id].published_date.replaceAll(".", "/");
 
-	let date = new Date(date0).toLocaleDateString("de-DE", options);
-	let date1 = date0.replace(/(..).(..).(....)/, "$3-$1-$2");
-    console.log(date0);
-	console.log(toString(date1));
+	let date0 = blogData[params.id].published_date;
+
+	// 0 hinzufügen, falls nicht vorhanden
+	if (date0.slice(2, 3) != ".") {
+		date0 = "0" + date0;
+	}
+
+	// Format von JAHR ändern
+	let dateslice = date0.slice(0, -2) + "20" + date0.slice(-2);
+
+	// Reihenfolge anpassen
+	let date1 = new Date(
+		dateslice.replace(/(\d{2}).(\d{2}).(\d{4})/, "$2/$1/$3")
+	);
+
+	// Mit Optionen darstellen
+	let date = new Date(date1).toLocaleDateString("de-DE", options);
 
 	return (
 		<section className="blogDetail">

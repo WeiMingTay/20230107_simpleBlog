@@ -6,6 +6,7 @@
 }
 .blogDetail > div:first-of-type {
   height: 60vh;
+  position: relative;
 }
 .blogDetail > div:first-of-type img {
   width: 100%;
@@ -14,12 +15,16 @@
      object-fit: cover;
 }
 .blogDetail > div:first-of-type a {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0.5rem;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.25);
   font-size: 0.8rem;
+  transition: all 250ms;
 }
 .blogDetail > div:first-of-type a:hover {
-  visibility: visible;
+  color: rgba(0, 0, 0, 0.75);
 }
 .blogDetail > div:last-of-type {
   display: flex;
@@ -39,5 +44,7 @@
   font-weight: 700;
 }
 .blogDetail > div:last-of-type > p {
+  position: absolute;
+  right: 10rem;
   font-weight: 600;
 }/*# sourceMappingURL=BlogDetail.css.map */

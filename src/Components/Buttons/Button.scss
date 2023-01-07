@@ -7,4 +7,10 @@ button {
     background-color: #fff;
     border-radius: .75rem;
     cursor: pointer;
+    transition: all 250ms;
+
+    &:is(:hover, :focus) {
+        background-color: $primaryButton;
+        color: #fff;
+    }
 }

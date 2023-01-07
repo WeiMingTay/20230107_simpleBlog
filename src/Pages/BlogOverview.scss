@@ -1,24 +1,30 @@
 .blogOverview {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	padding: 10rem;
-	gap: 3rem;
+	grid-template-rows: repeat(2, 1fr);
+
+	padding: 2rem 10rem;
+	gap: 2rem;
 	article {
 		display: grid;
-        gap: .5rem;
+		gap: 0.5rem;
 		grid-template-rows: 5fr 1fr 1fr;
 		div {
 			overflow: hidden;
 			height: 250px;
-            border-radius: 10px;
-			
-            display: flex;
-            justify-content: center;
-            align-items: center;
+			border-radius: 10px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			img {
-			object-fit: cover;	
-           width: 100%;
-           height: 100%;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+                transition: scale 250ms;
+                &:hover {
+                    scale: 1.1;
+                }
 			}
 		}
 	}

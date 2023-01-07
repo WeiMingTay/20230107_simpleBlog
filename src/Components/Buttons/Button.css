@@ -6,4 +6,9 @@ button {
   background-color: #fff;
   border-radius: 0.75rem;
   cursor: pointer;
+  transition: all 250ms;
+}
+button:is(:hover, :focus) {
+  background-color: #219653;
+  color: #fff;
 }/*# sourceMappingURL=Button.css.map */

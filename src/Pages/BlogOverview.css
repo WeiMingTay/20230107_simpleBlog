@@ -1,8 +1,9 @@
 .blogOverview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10rem;
-  gap: 3rem;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2rem 10rem;
+  gap: 2rem;
 }
 .blogOverview article {
   display: grid;
@@ -22,4 +23,8 @@
      object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: scale 250ms;
+}
+.blogOverview article div img:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=BlogOVerview.css.map */
