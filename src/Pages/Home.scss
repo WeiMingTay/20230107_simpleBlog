@@ -10,20 +10,28 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
-			
+			padding-top: 3rem;
+
+			// nicht geschafft das Bild hinter die Nav von App.js zu setzen, also hier einfach vergrößert :-D
+			h1 {
+				font-size: 2.5rem;
+			}
+			nav {
+				font-size: 1.5rem;
+			}
 		}
 
-        &:last-of-type {
-            padding: 0 10rem;
-            display: flex;
-            gap: 2rem;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
+		&:last-of-type {
+			padding: 0 10rem;
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
 
-            h2 {
-                font-size: 3rem;
-            }
-        }
+			h2 {
+				font-size: 3rem;
+			}
+		}
 	}
 }

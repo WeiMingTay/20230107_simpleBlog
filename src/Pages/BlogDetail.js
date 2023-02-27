@@ -14,7 +14,7 @@ const BlogDetail = () => {
 	let date0 = blogData[params.id].published_date;
 
 	// 0 hinzufügen, falls nicht vorhanden
-	if (date0.slice(2, 3) != ".") {
+	if (date0.slice(2, 3) !== ".") {
 		date0 = "0" + date0;
 	}
 
@@ -32,7 +32,7 @@ const BlogDetail = () => {
 	return (
 		<section className="blogDetail">
 			<div>
-				<img src={blogData[params.id].img_url} />
+				<img src={blogData[params.id].img_url} alt=""/>
 				<a href={blogData[params.id].img_url}>Bild-Quelle</a>
 			</div>
 			<div>
